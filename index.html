@@ -1,0 +1,706 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gustavo Ferreira</title>
+    <link rel="shortcut icon" type="image/png" href="img/dev.png" />
+    <link rel="stylesheet" href="css/foundation.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+
+
+    <!-- menu animado -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="menuAnimado/CircularNavigation/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="menuAnimado/CircularNavigation/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="menuAnimado/CircularNavigation/css/component1.css" />
+    <script src="menuAnimado/CircularNavigation/js/modernizr-2.6.2.min.js"></script>
+    <script src="https://kit.fontawesome.com/0c5b30b0b0.js" crossorigin="anonymous"></script>
+    <script src="menuAnimado/CircularNavigation/js/polyfills.js"></script>
+    <script src="menuAnimado/CircularNavigation/js/demo1.js"></script>
+    <script src="menuAnimado/CircularNavigation/interactivedemo/js/main.js"></script>
+    <script src="menuAnimado/CircularNavigation/interactivedemo/js/vendor/jquery-1.10.1.min.js"></script>
+    <script src="menuAnimado/CircularNavigation/interactivedemo/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="menuAnimado/CircularNavigation/interactivedemo/css/main.css"></script>
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="sscript.js"></script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="main-header large-12 columns no-padding">
+
+            <div class="global-page-container">
+
+                <div class="logo small-6 small-offset-3 large-3 large-offset-0 columns no-padding">
+
+                    <div class="table">
+                        <div class="table-cell">
+                            <h1> <span class="square" style="background-color:cornflowerblue">&nbsp;</span>Gustavo
+                                Ferreira</h1>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-menu show-for-large-up large-9 columns text-right">
+                    <div class="table">
+                        <div class="table-cell">
+                            <ul class="menu-items">
+                                <li><a href="#Sobre">Sobre Mim</a></li>
+                                <li><a href="#servicos">Recomendações</a></li>
+                                <li><a href="#projetos">Projetos</a></li>
+                                <li><a href="#anexos">Anexos</a></li>
+                                <li><a href="#contact-us">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hamburguer-icon" onclick="menuresp()" class="hamburguer-icon small-2 columns text-right">
+                    <div class="table">
+                        <div class="table-cell">
+                            <img src="img/menu/hamburguer.svg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-space small-1 columns"></div>
+
+            </div>
+        </div>
+
+        <div id="sliding-header-menu-outer" class="sliding-header-menu-outer">
+            <div class="sliding-header-menu">
+
+                <div id="sliding-header-menu-close-button" onclick="fechamenuresp()"
+                    class="sliding-header-menu-close-button small-12 columns">
+                    <div class="table">
+                        <div class="table-cell">
+                            <img class="close-icon" src="img/menu/close.svg">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="sliding-header-menu-main-menu small-12 columns">
+
+                    <div class="table">
+                        <div class="table-cell">
+                            <ul class="sliding-header-menu-li">
+                                <li><a href="#Sobre">Sobre Mim</a></li>
+                                <li><a href="#servicos">Recomendações</a></li>
+                                <li><a href="#projetos">Projetos</a></li>
+                                <li><a href="#anexos">Anexos</a></li>
+                                <li><a href="#contact-us">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="ghost-element">
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="component">
+            <!-- Start Nav Structure -->
+            <button class="cn-button" id="cn-button" onClick="menuanimado()">+</button>
+            <div class="cn-wrapper" id="cn-wrapper">
+                <ul>
+                    <li><a href="#"><span class="icon-picture"></span></a></li>
+                    <li><a href="#"><span class="icon-headphones"></span></a></li>
+                    <li><a href="#"><span class="icon-home"></span></a></li>
+                    <li><a href="#"><span class="icon-facetime-video"></span></a></li>
+                    <li><a href="#"><span class="fas fa-id-badge"></span></a></li>
+
+                </ul>
+            </div>
+            <div id="cn-overlay" class="cn-overlay"></div>
+            <!-- End Nav Structure -->
+        </div>
+    </div><!-- /container -->
+    <script src="js/polyfills.js"></script>
+    <script src="js/demo1.js"></script>
+
+    <div class="welcome-gallery small-12 columns">
+
+
+
+        <div class="photo-section small-12 columns">
+            <img class="homepage-main-photo" src="img/menu/fundo.png" style="opacity:0.3" alt="slider imagem 1">
+
+        </div>
+
+        <div class="main-section-title small-10 columns">
+            <div class="table">
+                <div class="table-cell">
+                    <h1 style="color:#0A0A0B;font-size:64px">Oi, Sou o Gustavo!</h1>
+                    <h2 style="color:#0A0A0B;font-size:32px">Web Developer</h2>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="photo-gradient">
+
+        </div>
+
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-reels-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.667 6h6.666C10.253 6 11 6.746 11 7.667v6.666c0 .92-.746 1.667-1.667 1.667H2.667C1.747 16 1 15.254 1 14.333V7.667C1 6.747 1.746 6 2.667 6z" />
+                            <path
+                                d="M7.404 11.697l6.363 3.692c.54.313 1.233-.066 1.233-.697V7.308c0-.63-.693-1.01-1.233-.696l-6.363 3.692a.802.802 0 0 0 0 1.393z" />
+                            <circle cx="3" cy="3" r="3" />
+                            <circle cx="9" cy="3" r="3" />
+                        </svg>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/if482HgK76I" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Fechar
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-reels-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.667 6h6.666C10.253 6 11 6.746 11 7.667v6.666c0 .92-.746 1.667-1.667 1.667H2.667C1.747 16 1 15.254 1 14.333V7.667C1 6.747 1.746 6 2.667 6z" />
+                            <path
+                                d="M7.404 11.697l6.363 3.692c.54.313 1.233-.066 1.233-.697V7.308c0-.63-.693-1.01-1.233-.696l-6.363 3.692a.802.802 0 0 0 0 1.393z" />
+                            <circle cx="3" cy="3" r="3" />
+                            <circle cx="9" cy="3" r="3" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="about-us small-12 columns no-padding small-centered inline">
+
+        <div class="global-page-container">
+            <a name="Sobre"></a>
+            <div id="about-us" class="section-title small-12 columns no-padding" name="Sobre">
+
+                <h3>Sobre Mim</h3>
+                <hr style="border-color:cornflowerblue">
+                </hr>
+            </div>
+
+            <div class="tab-box small-12 small-centered large-10 columns no-padding">
+
+                <div class="box-tabs" style="text-align:justify">
+                    <div class="single-tab" id="mission" onclick="missión()">Sobre mim</div>
+                    <div class="single-tab" id="vision" onclick="vista()">Habilidades</div>
+                    <div class="single-tab" id="value" onclick="valu()">Cursos</div>
+                </div>
+
+                <div id="box-text">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="servicos inline small-12 columns no-padding small-centered inline">
+
+        <div class="global-page-container">
+            <a name="servicos"></a>
+            <div id="servicos" class="section-title small-12 columns no-padding">
+                <h3>Recomendações(Linkedin)</h3>
+                <hr style="border-color:cornflowerblue">
+                </hr>
+            </div>
+        </div>
+
+        <div class="service-stripe small-12 columns no-padding">
+            <div class="global-page-container">
+                <div class="service-stripe-inner small-12 columns no-padding">
+
+                    <div id="service-previous" onclick="mudarpessoa()" class="stripe-arrow small-1 columns no-padding">
+                        <p>
+                            < </p>
+                    </div>
+
+                    <div class="stripe-content small-10 columns no-padding">
+                        <span id="service-title"></span>
+                        <p id="service-text" class="h4">
+
+                        </p>
+                    </div>
+
+                    <div id="service-next" onclick="mudarpessoa()" class="stripe-arrow small-1 columns no-padding">
+                        <p>></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="projetos small-12 large-12 columns no-padding small-centered inline">
+        <div class="global-page-container">
+            <a name="projetos"></a>
+            <div class="section-title small-12 columns no-padding">
+                <h3>Projetos</h3>
+                <hr style="border-color:cornflowerblue">
+                </hr>
+            </div>
+        </div>
+
+        <div class="global-page-container">
+
+
+            <div class="slider-projetos"
+                style="margin-left:5%;margin-right:5% ;overflow: hidden;font-family: 'Poppins'">
+                <div id="slider-002" class="slider-002 small-12 small-centered columns">
+
+                    <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                        <div class="projetos-item">
+                            <a href="https://www.certbest.com.br/LandingPage/home">
+
+                                <div class="projetos-item-image">
+                                    <img src="img/menu/certbest2.jpg" alt="certbest" />
+                                </div>
+
+                                <div class="item-info">
+
+
+                                    <div class="title" style="font-family: 'Poppins',sans-serif">CertBest</div>
+                                </div>
+
+                                <div class="gradient-filter">
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                        <div class="projetos-item">
+
+                            <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6670868417479806977">
+
+
+                                <div class="projetos-item-image">
+                                    <img src="img/menu/calc2.jpg" alt="Calculadora Apple" />
+                                </div>
+
+
+                                <div class="item-info">
+
+
+                                    <div class="title" style="font-family: 'Poppins',sans-serif">Calculadora Apple</div>
+                                </div>
+
+                                <div class="gradient-filter">
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                        <div class="projetos-item">
+
+                            <a href="Mercado Livre/mercado.html">
+
+
+                                <div class="projetos-item-image">
+                                    <img src="img/menu/mercado3.png" alt="Mercado Livre" />
+
+                                </div>
+
+
+                                <div class="item-info">
+
+
+                                    <div class="title" style="font-family: 'Poppins',sans-serif">Orçamento de Camisa
+                                    </div>
+                                </div>
+
+                                <div class="gradient-filter">
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <!--<div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                        <div class="projetos-item">
+                            <a href="index.html">
+
+                                <div class="projetos-item-image">
+                                    <img src="img/project3.jpg" alt="cheesecake" />
+                                </div>
+
+                                <div class="item-info">
+
+
+                                    <div class="title">Weather App</div>
+                                </div>
+
+                                <div class="gradient-filter">
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>-->
+                    <!--<div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                        <div class="projetos-item">
+                            <a href="index.html">
+
+                                <div class="projetos-item-image">
+                                    <img src="img/project4.jpg" alt="salmao" />
+                                </div>
+
+                                <div class="item-info">
+
+
+                                    <div class="title">ProAlp Website</div>
+                                </div>
+
+                                <div class="gradient-filter">
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>-->
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="projetos small-12 large-12 columns no-padding small-centered inline">
+        <div class="global-page-container">
+            <a name="anexos"></a>
+            <div class="section-title small-12 columns no-padding">
+                <h3>Anexos</h3>
+                <hr style="border-color:cornflowerblue">
+                </hr>
+            </div>
+        </div>
+
+        <div class="global-page-container">
+
+
+            <div class="slider-projetos" style="margin-left:5%;margin-right:5% ;overflow: hidden;">
+                <div id="slider-002" class="slider-002 small-12 small-centered columns">
+
+                    <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                        <div class="projetos-item">
+                            <a href="pdf/cv-ingles.pdf">
+
+                                <div class="projetos-item-image">
+                                    <img src="img/menu/curriculum.jpg" alt="CV" />
+                                </div>
+
+
+                                <div class="item-info">
+
+
+                                    <div class="title" style="font-family: 'Poppins',sans-serif">Currículo</div>
+                                </div>
+
+                                <div class="gradient-filter">
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end">
+                        <div class="projetos-item">
+                            <a href="pdf/coverletter.pdf">
+
+                                <div class="projetos-item-image">
+                                    <img src="img/menu/coverletterimgg.jpg" alt="Calculadora Apple" />
+                                </div>
+
+
+                                <div class="item-info">
+
+
+                                    <div class="title" style="font-family: 'Poppins',sans-serif">Carta de Apresentação
+                                    </div>
+                                </div>
+
+                                <div class="gradient-filter">
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="projetos-item-outer bounce-hover small-12 medium-4 columns end" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <div class="projetos-item">
+
+                            <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"style="width:100%;height:200px;" >-->
+                            <div class="projetos-item-image">
+
+                                <img src="img/menu/filme.jpg" alt="Meu Vídeo" />
+
+                            </div>
+
+
+                            <div class="item-info">
+
+
+                                <div class="title" style="font-family: 'Poppins',sans-serif">Vídeo Currículo</div>
+                            </div>
+
+                            <div class="gradient-filter">
+                            </div>
+                            <!--</button>-->
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="contact-us" class="contact-us small-12 columns no-padding inline">
+
+        <div class="global-page-container">
+            <a name="contact-us"></a>
+            <div class="section-title small-12 columns no-padding">
+                <h3>Contato</h3>
+                <hr style="border-color:cornflowerblue">
+                </hr>
+            </div>
+
+
+            <div class="contact-form small-12 medium-10 large-6 columns no-padding small-centered">
+
+                <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+                    <input type="text" style="border-radius:75px;font-size:17px" name="adress" placeholder="Assunto" />
+                    <input type="text" style="border-radius:75px;font-size:17px" name="extra_phone_number"
+                        placeholder="Telefone(Opcional)" />
+                    <input type="text" style="border-radius:75px;font-size:17px" name="extra_email"
+                        placeholder="Seu email(Opcional)" />
+                    <textarea name="text" style="border-radius:20px;font-size:17px" placeholder="Mensagem"></textarea>
+                    <input type="hidden" name="access_token" value="sxuc2l4ydw23ffm4ijzz7m8a" />
+
+
+
+                    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+
+
+
+                    <input id="submit_form" type="submit" style="border-radius:75px;" value="Enviar" />
+                    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+
+                </form>
+
+                <!-- optional, prevents the submit button from being pressed more than once -->
+                <script>
+                    var submitButton = document.getElementById("submit_form");
+                    var form = document.getElementById("email_form");
+                    form.addEventListener("submit", function (e) {
+                        setTimeout(function () {
+                            submitButton.value = "Enviando...";
+                            submitButton.disabled = true;
+                        }, 1);
+                    });
+                </script>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer id="footer" class="small-12 columns no-padding">
+
+        <div class="global-page-container">
+
+            <div class="small-11 small-centered large-12 columns footer-section inline">
+
+                <div class="follow-us small-5 medium-3 small-offset-1 medium-offset-0 columns">
+                    <h4 class="footer-section-title">Me siga no:</h4>
+                    <a href="http://www.facebook.com/?_rdr"><img src="img/social-icons/facebook.png" style="width:37px"
+                            alt="facebook-icon"></a>
+                    <a href="https://www.linkedin.com/in/gustavo-de-sousa-ferreira-/"><img
+                            src="img/social-icons/linkedin.png" alt="linkedin-icon" style="width:37px"></a>
+
+
+                    <a href="http://www.instagram.com"><img src="img/social-icons/instagram.png" style="width:37px"
+                            alt="facebook-icon"></a>
+
+
+
+                </div>
+
+                <div class="contato small-5 medium-3 small-offset-1 medium-offset-0 columns">
+                    <h4 class="footer-section-title">Contato</h4>
+                    <p>
+
+                        Osasco-SP-Brasil<br>
+                        +55 11 999270425<br>
+                        <a href="mailto:gustavoferreira.dev@gmail.com">gustavoferreira.dev@gmail.com</a> <br>
+
+                    </p>
+                </div>
+
+                <div class="horario small-5 medium-3 small-offset-1 medium-offset-0 columns">
+                    <h4 class="footer-section-title">Horários</h4>
+                    <p>
+                        Seg-Sex: 13h30 - 22h00<br>
+                        Sábado 13h30 - 22h00<br>
+                        Domingo 13h30 - 22h00
+                    </p>
+                </div>
+
+                <div class="como-chegar small-5 medium-3 small-offset-1 medium-offset-0 columns">
+                    <h4 class="footer-section-title">Onde Moro</h4>
+                    <div id="map"></div>
+
+
+
+
+                    <script>
+                        // Initialize and add the map
+                        function initMap() {
+                            // The location of Uluru
+                            var uluru = { lat: -23.540100, lng: -46.774658 };
+                            // The map, centered at Uluru
+                            var map = new google.maps.Map(
+                                document.getElementById('map'), { zoom: 4, center: uluru });
+                            // The marker, positioned at Uluru
+                            var marker = new google.maps.Marker({ position: uluru, map: map });
+                        }
+                    </script>
+                    <!--Load the API from the specified URL
+                    * The async attribute allows the browser to render the page while the API loads
+                    * The key parameter will contain your own API key (which is not needed for this tutorial)
+                    * The callback parameter executes the initMap() function
+                    -->
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDg4YXC7zmj25RU5YdwCRxoF2H1Sx2p_g&callback=initMap">
+                        </script>
+
+
+
+
+
+
+                </div>
+
+                <hr>
+                </hr>
+
+                <div class="copyright small-12 columns">
+
+                    <span id="current_year">2020</span> &copy; Todos os direitos reservados
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175962013-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-175962013-1');
+    </script>
+
+
+    <!--<script>$(document).foundation();</script>-->
+</body>
+
+</html>
